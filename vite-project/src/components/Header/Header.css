@@ -1,0 +1,115 @@
+/* Базові стилі */
+/* Світла тема — за замовчуванням */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Логотип */
+.logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2d3436;
+  letter-spacing: -0.5px;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Навігація */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+}
+
+.nav-list-item {
+  position: relative;
+}
+
+.nav-list-link {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav-list-link:hover {
+  color: #667eea;
+}
+
+.nav-list-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.nav-list-link:hover::after {
+  width: 100%;
+}
+
+/* Кнопка */
+.header button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+.header button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+.header button:active {
+  transform: translateY(0);
+}
+/* ===== Темна тема ===== */
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #0f1220;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  .logo {
+    background: linear-gradient(135deg, #8b9dff 0%, #b18cff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .nav-list-link {
+    color: #cbd5e1;
+  }
+}

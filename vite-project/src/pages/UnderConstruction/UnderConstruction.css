@@ -6,24 +6,41 @@
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background: radial-gradient(
+  background: #f2f3f8;
+}
+@media (prefers-color-scheme: dark) {
+  .under-construction{
+   background: radial-gradient(
     ellipse at center,
     #2b2e4a 0%,
     #1e1e1e 60%
-  );
+  ); 
+  }
 }
 
 .under-construction h1 {
   font-size: 2.5rem;
-  color: #a98bff;
+  color: #8b8cff;
   margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+ .under-construction h1 {
+  color: #a98bff;
+ }
 }
 
 .under-construction p {
   max-width: 520px;
-  color: #cfcfcf;
+  color: #1e1e2f;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+@media (prefers-color-scheme: dark) {
+ .under-construction p {
+  color: #cfcfcf;
+ }
 }
 
 .badge {
@@ -31,8 +48,13 @@
   padding: 0.5rem 1.2rem;
   border-radius: 999px;
   background: linear-gradient(135deg, #7b6cff, #a98bff);
-  color: #111;
+  color: #eee;
   font-weight: 600;
   font-size: 0.9rem;
   box-shadow: 0 8px 25px rgba(123, 108, 255, 0.4);
+}
+@media (prefers-color-scheme: dark) {
+  .badge {
+    color: #111;
+  }
 }

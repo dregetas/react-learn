@@ -1,5 +1,6 @@
 import React from "react";
-import yakudza from '../../assets/yakudza.svg';
+import yakudzaDark from '../../assets/ysdark.svg';
+import yakudzaLight from '../../assets/yslight.svg';
 import lionixSquad from '../../assets/lsquad.svg'
 import lionixDev from '../../assets/ldevelopment.svg'
 import './Project.css'
@@ -18,7 +19,8 @@ const Project = () => {
                         </div>
 
                         <div className="project-card">
-                            <img src={yakudza} className="yakudza" alt="Yakudza Squad" />
+                            <img src={yakudzaDark} className="yakudza-dark" alt="Yakudza Squad" />
+                            <img src={yakudzaLight} className="yakudza-light" alt="Yakudza Squad" />
                             <a href="https://www.youtube.com/@YakudzaSquad">Yakudza Squad</a>
                             <p>Кіберспортивна команда по Brawl Stars</p>
                         </div>

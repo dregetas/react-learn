@@ -1,7 +1,6 @@
 /* ===== Footer ===== */
 .footer {
   background-color: #0f1220;
-  color: #cbd5e1;
   padding: 4rem 5% 2rem;
   text-align: center;
 }
@@ -92,6 +91,12 @@
   transform: translateY(-3px);
 }
 
+@media (prefers-color-scheme: light) {
+  .socials a {
+    color: #475569;
+  }
+}
+
 
 /*Контакти*/
 .footer-contacts {
@@ -107,13 +112,19 @@
   align-items: center;
   gap: 0.6rem;
   font-size: 0.95rem;
-  color: #cbd5e1;
 }
 
 .contact-item a {
-  color: inherit;
+  color: #cbd5e1;
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  .contact-item a {
+    color: #475569;
+  }
+
 }
 
 .contact-item a:hover {

@@ -1,10 +1,35 @@
 /* ===== Page ===== */
+/* ===== PROJECTS – DEFAULT LIGHT ===== */
 .project-page {
+  --bg: #f2f3f8;
+  --card-bg: #ffffff;
+  --text-main: #1e1e2f;
+  --text-muted: #555;
+
+  --accent-1: #5b6cff;
+  --accent-2: #9b7cff;
+
   min-height: 100vh;
-  background: #1e1e1e;
+  background: var(--bg);
   padding: 120px 24px 100px;
-  color: #eaeaf0;
+  color: var(--text-main);
 }
+@media (prefers-color-scheme: dark) {
+  .project-page {
+    --bg: #1e1e1e;
+    --card-bg: rgba(255, 255, 255, 0.04);
+    --text-main: #eaeaf0;
+    --text-muted: #cfd2ff;
+
+    --accent-1: #8b8cff;
+    --accent-2: #a98bff;
+  }
+  .yakudza-light {
+    display: none;
+  }
+}
+
+
 
 /* ===== Section ===== */
 .projects {
@@ -18,9 +43,9 @@
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 60px;
-  background: linear-gradient(90deg, #8b8cff, #a98bff);
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent
 }
 
 /* ===== Grid ===== */
@@ -32,11 +57,11 @@
 
 /* ===== Card ===== */
 .project-card {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--card-bg);
   border-radius: 18px;
   padding: 28px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   position: relative;
   overflow: hidden;
@@ -80,14 +105,14 @@
   font-size: 1.4rem;
   margin-bottom: 10px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-main);
 }
 
 /* ===== Card Text ===== */
 .project-card p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #cfd2ff;
+  color: var(--text-muted);
 }
 
 /* ===== Accent line ===== */
@@ -111,5 +136,13 @@
 
   .project-card {
     padding: 22px;
+  }
+}
+.yakudza-dark {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .yakudza-dark {
+    display: block;
   }
 }

@@ -44,15 +44,15 @@ const Home = () => {
                 <h2>Проєкти</h2>
 
                 <div className="projects-grid">
-                    <div className="project-card">
+                    <div className="home-project-card">
                         <h3>Lionix Squad</h3>
                         <span>YouTube / Gaming</span>
                     </div>
-                    <div className="project-card">
+                    <div className="home-project-card">
                         <h3>Yakudza Squad</h3>
                         <span>YouTube / Gaming</span>
                     </div>
-                    <div className="project-card">
+                    <div className="home-project-card">
                         <h3>Lionix Development</h3>
                         <span>Web / Digital</span>
                     </div>

@@ -171,7 +171,7 @@ section h2 {
   gap: 2rem;
 }
 
-.project-card {
+.home-project-card {
   padding: 2.5rem 2rem;
   border-radius: 20px;
   background: linear-gradient(135deg, #667eea, #764ba2);
@@ -180,17 +180,17 @@ section h2 {
   transition: all 0.3s ease;
 }
 
-.project-card h3 {
+.home-project-card h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
-.project-card span {
+.home-project-card span {
   font-size: 0.95rem;
   opacity: 0.85;
 }
 
-.project-card:hover {
+.home-project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
 }

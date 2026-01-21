@@ -80,7 +80,7 @@ section h2 {
 }
 
 /* Buttons */
-.primary-btn {
+/* .primary-btn {
   background: linear-gradient(135deg, #8b9dff, #764ba2);
   color: white;
   border: none;
@@ -94,7 +94,7 @@ section h2 {
 .primary-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.35);
-}
+} */
 
 .secondary-btn {
   padding: 0.75rem 1.75rem;

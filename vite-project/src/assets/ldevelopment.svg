@@ -1,0 +1,40 @@
+<svg width="320" height="160" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Товста літера L -->
+  <path
+    d="M30 20 L30 130 L110 130"
+    fill="none"
+    stroke="black"
+    stroke-width="22"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+
+  <!-- Сіра шестерня -->
+  <g transform="translate(220 80)">
+    <!-- зубці -->
+    <g fill="#9e9e9e">
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(0)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(22.5)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(45)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(67.5)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(90)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(112.5)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(135)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(157.5)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(180)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(202.5)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(225)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(247.5)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(270)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(292.5)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(315)" />
+      <rect x="-6" y="-68" width="12" height="20" transform="rotate(337.5)" />
+    </g>
+
+    <!-- тіло шестерні -->
+    <circle r="55" fill="#9e9e9e"/>
+    <circle r="22" fill="white"/>
+  </g>
+
+</svg>

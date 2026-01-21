@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { FaGithub, FaInstagram, FaTelegram, FaYoutube } from "react-icons/fa";
 import './Footer.css';
 
@@ -8,16 +9,16 @@ const Footer = () => {
             <h2 className="footer-logo">Lionix Studio</h2>
             <ul className="footer-list">
                     <li className="footer-list-item">
-                        <a href="" className="footer-link">Про нас</a>
+                        <Link to="/about" className="footer-link">Про нас</Link>
                     </li>
                     <li className="footer-list-item">
-                        <a href="" className="footer-link">Проєкти</a>
+                        <Link to="/project" className="footer-link">Проєкти</Link>
                     </li>
                     <li className="footer-list-item">
-                        <a href="" className="footer-link">Послуги</a>
+                        <Link to="/service" className="footer-link">Послуги</Link>
                     </li>
                     <li className="footer-list-item">
-                        <a href="" className="footer-link">Блог</a>
+                        <Link to="/blog" className="footer-link">Блог</Link>
                     </li>
                 </ul>
                 <div className="footer-contacts">

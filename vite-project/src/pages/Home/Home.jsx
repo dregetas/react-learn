@@ -1,12 +1,9 @@
 import React from 'react';
 import './Home.css'
-import Header from '../../components/Header/Header.jsx';
-import Footer from '../../components/Footer/Footer.jsx';
 
 const Home = () => {
     return(
         <>
-            <Header />
             <section className="hero">
                 <h1>
                     Створюємо сучасний <span>ігровий контент</span> для вас
@@ -66,9 +63,6 @@ const Home = () => {
                 <p>Напишіть нам — відповімо протягом 24 годин</p>
                 <button className="primary-btn">Звʼязатися</button>
             </section>
-
-
-            <Footer />
         </>
     );
 };

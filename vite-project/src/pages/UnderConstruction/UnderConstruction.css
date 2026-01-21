@@ -1,0 +1,38 @@
+.under-construction {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: radial-gradient(
+    ellipse at center,
+    #2b2e4a 0%,
+    #1e1e1e 60%
+  );
+}
+
+.under-construction h1 {
+  font-size: 2.5rem;
+  color: #a98bff;
+  margin-bottom: 1rem;
+}
+
+.under-construction p {
+  max-width: 520px;
+  color: #cfcfcf;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.badge {
+  margin-top: 2rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7b6cff, #a98bff);
+  color: #111;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 25px rgba(123, 108, 255, 0.4);
+}

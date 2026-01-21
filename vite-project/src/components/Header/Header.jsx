@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     return (
     <header className='header'>
         <div className='header-container'>
-            <h1 className='logo'>Lionix Studio</h1>
+             <Link to="/" className="logo">
+                Lionix Studio
+            </Link>
             <nav className='navigation'>
                 <ul className="navigation-list">
                     <li className="nav-list-item">
-                        <a href="" className="nav-list-link">Про нас</a>
+                        <Link to="/about" className="nav-list-link">Про нас</Link>
                     </li>
                     <li className="nav-list-item">
-                        <a href="" className="nav-list-link">Проєкти</a>
+                        <Link to="/project" className="nav-list-link">Проєкти</Link>
                     </li>
                     <li className="nav-list-item">
-                        <a href="" className="nav-list-link">Послуги</a>
+                        <Link to="/service" className="nav-list-link">Послуги</Link>
                     </li>
                     <li className="nav-list-item">
-                        <a href="" className="nav-list-link">Блог</a>
+                        <Link to="/blog" className="nav-list-link">Блог</Link>
                     </li>
                 </ul>
             </nav>
